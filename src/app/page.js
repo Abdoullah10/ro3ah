@@ -1,5 +1,6 @@
 import Logo from "./logo";
 import Br from "./brain";
+import C from "./logo";
 export default function Home() {
   return (
     <div>
@@ -31,7 +32,7 @@ export default function Home() {
     
   <button className="bg-teal-600 py-3 px-3 rounded-lg text-lg text-center text-white hover:bg-teal-500 ">ابحث</button>
   <input className="text-right w-3/4 mr-0 rounded-lg " type="text"  placeholder="بحث عن فرص رعاية "/>
-
+  
 </div>
     
     </div>
@@ -39,7 +40,18 @@ export default function Home() {
    
                
     </div>
-    <div className="flex justify-center py-5 bg-gray-100"><video className="w-1/3" /*width="400" height="1000"*/ controls src="/v.mp4" type="video/mp4"/>
+    <div className="flex justify-center items-center  h-120   bg-gray-100"><video width={700} height={700} controls src="/v.mp4" type="video/mp4"/>
+  </div>
+  <div className="flex flex-col items-center py-10">
+    <h1 className="text-6xl font-black text-violet-800 font-kufi ">مزايا رعاة</h1>
+    <div className="flex justify-around space-x-5">
+      <div><C/></div>
+      <div></div>
+      <div></div>
+    </div>
+
+
+
   </div>
     
     </div>
