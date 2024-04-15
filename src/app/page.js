@@ -45,7 +45,7 @@ export default function Home() {
   <div className="flex flex-col items-center py-10">
     <h1 className="text-6xl font-black text-violet-800 font-kufi ">مزايا رعاة</h1>
     <div className="flex justify-around space-x-5">
-      <div><C/></div>
+      <div></div>
       <div></div>
       <div></div>
     </div>
