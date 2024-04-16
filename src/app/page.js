@@ -1,6 +1,7 @@
-import Logo from "./logo";
-import Br from "./brain";
-import C from "./logo";
+import Logo from "../ui/logo";
+import Br from "../ui/brain";
+import C from "../ui/logo";
+import Gif from "@/ui/gif";
 export default function Home() {
   return (
     <div>
@@ -42,12 +43,12 @@ export default function Home() {
     </div>
     <div className="flex justify-center items-center  h-120   bg-gray-100"><video width={700} height={700} controls src="/v.mp4" type="video/mp4"/>
   </div>
-  <div className="flex flex-col items-center py-10">
-    <h1 className="text-6xl font-black text-violet-800 font-kufi ">مزايا رعاة</h1>
-    <div className="flex justify-around space-x-5">
-      <div></div>
-      <div></div>
-      <div></div>
+  <div className="flex flex-col items-center py-10 space-y-16">
+    <h1 className="flex text-center text-6xl font-black  text-violet-800 font-kufi ">مزايا رعاة</h1>
+    <div className="flex flex-row-reverse  text-center px-28 justify-between space-x-5 w-full">
+      <div className="flex flex-col    items-center"><Gif src="/facile.gif" alt="facile"/><br/><h1 className="font-kufi font-bold text-2xl">السهولة</h1><h1 className="mt-2 font-kufi font-medium text-lg" >بخطوات بسيطة يمكنك إنشاء إعلانك لطلب <br/>الرعاية</h1></div>
+      <div className="flex flex-col    items-center"><Gif src="/c.gif" alt="الشفافية"/><br/><h1 className="font-kufi font-bold text-2xl">الشفافية</h1><h1 className="mt-2 font-kufi font-medium text-lg">تواصل مع الرعاة بشكل مباشر وبدون وجود<br/>وسطاء وبدون عمولة</h1></div>
+      <div className="flex flex-col    items-center"><Gif src="/e.gif" alt="الإنتشار"/><br/><h1 className="font-kufi font-bold text-2xl">الانتشار</h1><h1 className="mt-2 font-kufi font-medium text-lg"> لك وصول اعلانك لأكبر عدد ممكن من<br/>الرعاة المحتملين</h1></div>
     </div>
 
 

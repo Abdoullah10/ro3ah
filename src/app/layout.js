@@ -1,5 +1,5 @@
 import "./globals.css";
-import Img from "./image";
+import Img from "../ui/image";
 export const metadata = {
   title: "ABOU-Game",
   description: "game of guess",
