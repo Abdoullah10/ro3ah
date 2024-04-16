@@ -16,7 +16,8 @@ module.exports = {
         
       fontFamily:{
           'mario':["Shojumaru"],
-          'kufi':["Noto Kufi Arabic"]
+          'kufi':["Noto Kufi Arabic"],
+          "mont":["Montserrat-Arabic-Regular"]
       },
       
       
