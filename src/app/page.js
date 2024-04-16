@@ -1,7 +1,7 @@
 import Logo from "../ui/logo";
 import Br from "../ui/brain";
-import C from "../ui/logo";
-import Gif from "@/ui/gif";
+
+import Lord from "@/ui/animation";
 export default function Home() {
   return (
     <div>
@@ -32,7 +32,7 @@ export default function Home() {
     <div className="flex space-x-2 font-bold justify-end   ">
     
   <button className="bg-teal-600 py-3 px-3 rounded-lg text-lg text-center text-white hover:bg-teal-500 ">ابحث</button>
-  <input className="text-right w-3/4 mr-0 rounded-lg " type="text"  placeholder="بحث عن فرص رعاية "/>
+  <input className="text-right font-mont text-black w-3/4 mr-0 rounded-lg " type="text"  placeholder="بحث عن فرص رعاية "/>
   
 </div>
     
@@ -46,15 +46,16 @@ export default function Home() {
   <div className="flex flex-col items-center py-10 space-y-16">
     <h1 className="flex text-center text-6xl font-black  text-violet-800 font-mont ">مزايا رعاة</h1>
     <div className="flex flex-row-reverse  text-center px-28 justify-between space-x-5 w-full">
-      <div className="flex flex-col    items-center"><Gif src="/facile.gif" alt="facile"/><br/><h1 className="font-mont font-bold text-2xl">السهولة</h1><h1 className="mt-2 font-mont font-medium text-lg" >بخطوات بسيطة يمكنك إنشاء إعلانك لطلب <br/>الرعاية</h1></div>
-      <div className="flex flex-col    items-center"><Gif src="/c.gif" alt="الشفافية"/><br/><h1 className="font-mont font-bold text-2xl">الشفافية</h1><h1 className="mt-2 font-mont font-medium text-lg">تواصل مع الرعاة بشكل مباشر وبدون وجود<br/>وسطاء وبدون عمولة</h1></div>
-      <div className="flex flex-col    items-center"><Gif src="/e.gif" alt="الإنتشار"/><br/><h1 className="font-mont font-bold text-2xl">الانتشار</h1><h1 className="mt-2 font-mont font-medium text-lg"> لك وصول اعلانك لأكبر عدد ممكن من<br/>الرعاة المحتملين</h1></div>
+      <div className="flex flex-col    items-center"><Lord src="https://cdn.lordicon.com/rmjnvgsm.json" /><br/><h1 className="font-mont font-semibold text-2xl">السهولة</h1><h1 className="mt-2 font-mont font-medium text-lg" >بخطوات بسيطة يمكنك إنشاء إعلانك لطلب <br/>الرعاية</h1></div>
+      <div className="flex flex-col    items-center"><Lord src="https://cdn.lordicon.com/wzrwaorf.json"/><br/><h1 className="font-mont font-semibold text-2xl">الشفافية</h1><h1 className="mt-2 font-mont font-medium text-lg">تواصل مع الرعاة بشكل مباشر وبدون وجود<br/>وسطاء وبدون عمولة</h1></div>
+      <div className="flex flex-col    items-center"><Lord  src="https://cdn.lordicon.com/cilymyep.json"/><br/><h1 className="font-mont font-semibold text-2xl">الانتشار</h1><h1 className="mt-2 font-mont font-medium text-lg"> لك وصول اعلانك لأكبر عدد ممكن من<br/>الرعاة المحتملين</h1></div>
     </div>
 
 
-
   </div>
-    
+  
+
+
     </div>
   );
 }
