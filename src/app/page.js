@@ -2,6 +2,7 @@ import Logo from "../ui/logo";
 import Br from "../ui/brain";
 
 import Lord from "@/ui/animation";
+import P from "@/ui/an";
 export default function Home() {
   return (
     <div>
@@ -54,7 +55,7 @@ export default function Home() {
 
   </div>
   
-
+<P/>
 
     </div>
   );
