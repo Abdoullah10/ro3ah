@@ -1,10 +1,23 @@
-import Image from "next/image"
-export default function Lord(props) {
-  return (
-  <lord-icon
-  src={props.src}
-  trigger="hover"
-  colors="primary:#4f1091,secondary:#109173"
-  style={{width:"150px", height:"150px"}} /> 
-  )
-}
+ "use client"
+import { useEffect, useRef, useState } from 'react';
+import { Player } from '@lordicon/react';
+
+export default function Lord(props) {    
+    const playerRef = useRef(null);
+    const [state, setState] = useState('in-reveal');
+    useEffect(() => {
+        playerRef.current?.playFromBeginning();
+    }, [])
+    return (
+      
+        <Player 
+          ref={playerRef} 
+          size={96} 
+          icon={require(props.src)}
+          state={state}
+
+        />
+       
+    );
+    
+};

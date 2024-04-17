@@ -1,8 +1,8 @@
 import Logo from "../ui/logo";
-import Br from "../ui/brain";
-
+import Br from "@/ui/brain";
 import Lord from "@/ui/animation";
-import P from "@/ui/an";
+
+
 export default function Home() {
   return (
     <div>
@@ -47,15 +47,15 @@ export default function Home() {
   <div className="flex flex-col items-center py-10 space-y-16">
     <h1 className="flex text-center text-6xl font-black  text-violet-800 font-mont ">مزايا رعاة</h1>
     <div className="flex flex-row-reverse  text-center px-28 justify-between space-x-5 w-full">
-      <div className="flex flex-col    items-center"><Lord src="https://cdn.lordicon.com/rmjnvgsm.json" /><br/><h1 className="font-mont font-semibold text-2xl">السهولة</h1><h1 className="mt-2 font-mont font-medium text-lg" >بخطوات بسيطة يمكنك إنشاء إعلانك لطلب <br/>الرعاية</h1></div>
-      <div className="flex flex-col    items-center"><Lord src="https://cdn.lordicon.com/wzrwaorf.json"/><br/><h1 className="font-mont font-semibold text-2xl">الشفافية</h1><h1 className="mt-2 font-mont font-medium text-lg">تواصل مع الرعاة بشكل مباشر وبدون وجود<br/>وسطاء وبدون عمولة</h1></div>
-      <div className="flex flex-col    items-center"><Lord  src="https://cdn.lordicon.com/cilymyep.json"/><br/><h1 className="font-mont font-semibold text-2xl">الانتشار</h1><h1 className="mt-2 font-mont font-medium text-lg"> لك وصول اعلانك لأكبر عدد ممكن من<br/>الرعاة المحتملين</h1></div>
+      <div className="flex flex-col    items-center"><Lord src='@/ui/wired-outline-2239-star-of-bethlehem.json' /><br/><h1 className="font-mont font-semibold text-2xl">السهولة</h1><h1 className="mt-2 font-mont font-medium text-lg" >بخطوات بسيطة يمكنك إنشاء إعلانك لطلب <br/>الرعاية</h1></div>
+      <div className="flex flex-col    items-center"><Lord src='@/ui/wired-outline-2239-star-of-bethlehem.json'/><br/><h1 className="font-mont font-semibold text-2xl">الشفافية</h1><h1 className="mt-2 font-mont font-medium text-lg">تواصل مع الرعاة بشكل مباشر وبدون وجود<br/>وسطاء وبدون عمولة</h1></div>
+      <div className="flex flex-col    items-center"><Lord  src='@/ui/wired-outline-186-puzzle.json'/><br/><h1 className="font-mont font-semibold text-2xl">الانتشار</h1><h1 className="mt-2 font-mont font-medium text-lg"> لك وصول اعلانك لأكبر عدد ممكن من<br/>الرعاة المحتملين</h1></div>
     </div>
 
 
   </div>
   
-<P/>
+
 
     </div>
   );
