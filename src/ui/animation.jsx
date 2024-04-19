@@ -53,8 +53,7 @@ export default function Lord(props) {
           size={icon.size} 
           icon={icon.src}
           state={state}
-       
-       />
+        />
        </div>
        
     );
