@@ -1,7 +1,7 @@
 import "./globals.css";
 export const metadata = {
-  title: "ABOU-Game",
-  description: "game of guess",
+  title: "رعاة",
+  description: "منصة رعاة",
 };
 
 export default function RootLayout({ children }) {
