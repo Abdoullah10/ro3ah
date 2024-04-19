@@ -7,7 +7,7 @@ import Icon from "@/ui/icon";
 export default function Home() {
   return (
     <div>
-      <div className="fixed top-0  w-full h-20  px-10  bg-white shadow-md bg-opacity-95  flex justify-evenly items-center space-x-5 " >
+      <div className="fixed top-0 z-50 w-full h-20  px-10  bg-white shadow-md bg-opacity-95  flex justify-evenly items-center space-x-5 " >
         <div className="flex    space-x-4  font-bold  font-mont text-sm   items-center ">
 
           <button className="bg-violet-800 py-2 px-2.5 rounded-lg text-white hover:bg-violet-700   " >تسجيل الدخول</button>
@@ -43,15 +43,12 @@ export default function Home() {
 
 
       </div>
-      <div className="flex justify-center items-center  h-120    bg-gray-100"><video width={700} height={700} controls src="/v.mp4" type="video/mp4" />
+      <div className="flex justify-center items-center  h-120     bg-gray-100"><video width={700} height={700} controls src="/v.mp4" type="video/mp4" />
       </div>
       <div className="flex flex-col items-center py-10 space-y-16">
         <h1 className="flex text-center text-6xl font-black  text-violet-800 font-mont ">مزايا رعاة</h1>
         <div className="flex flex-row-reverse  text-center px-28 justify-between space-x-5 w-full">
-          <div className="flex flex-col    items-center">
-            <Lord icon="puzzle" /><br />
-            <h1 className="font-mont font-semibold text-2xl">السهولة</h1><h1 className="mt-2 font-mont font-medium text-lg" >بخطوات بسيطة يمكنك إنشاء إعلانك لطلب <br />الرعاية</h1>
-            </div>
+          <div className="flex flex-col    items-center"><Lord icon="puzzle" /><br /><h1 className="font-mont font-semibold text-2xl">السهولة</h1><h1 className="mt-2 font-mont font-medium text-lg" >بخطوات بسيطة يمكنك إنشاء إعلانك لطلب <br />الرعاية</h1></div>
           <div className="flex flex-col    items-center"><Lord icon="superstar" /><br /><h1 className="font-mont font-semibold text-2xl">الشفافية</h1><h1 className="mt-2 font-mont font-medium text-lg">تواصل مع الرعاة بشكل مباشر وبدون وجود<br />وسطاء وبدون عمولة</h1></div>
           <div className="flex flex-col    items-center"><Lord icon="stars" /><br /><h1 className="font-mont font-semibold text-2xl">الانتشار</h1><h1 className="mt-2 font-mont font-medium text-lg"> لك وصول اعلانك لأكبر عدد ممكن من<br />الرعاة المحتملين</h1></div>
         </div>
