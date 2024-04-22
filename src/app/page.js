@@ -1,10 +1,9 @@
 "use client"
-import Logo from "../ui/logo";
-import Br from "@/ui/brain";
-import Lord from "@/ui/animation";
-
-import Icon from "@/ui/icon";
-import Splider from "@/ui/splider";
+import Logo from "./ui/splider";
+import Br from "./ui/splider";
+import Lord from "./ui/splider";
+import Icon from "./ui/icon";
+import Splider from "./ui/splider";
 
 export default function Home() {
  
@@ -55,16 +54,16 @@ export default function Home() {
           <div className="flex flex-col    items-center"><Lord icon="superstar" /><br /><h1 className="font-mont font-semibold text-2xl">الشفافية</h1><h1 className="mt-2 font-mont font-medium text-lg">تواصل مع الرعاة بشكل مباشر وبدون وجود<br />وسطاء وبدون عمولة</h1></div>
           <div className="flex flex-col    items-center"><Lord icon="stars" /><br /><h1 className="font-mont font-semibold text-2xl">الانتشار</h1><h1 className="mt-2 font-mont font-medium text-lg"> لك وصول اعلانك لأكبر عدد ممكن من<br />الرعاة المحتملين</h1></div>
         </div>
-      </div>
+  </div>
       <div className="flex flex-col  py-10 space-y-16">
         <div className="flex justify-between px-24 ">
           <div className="flex items-center space-x-3">
             <Icon/><h1 className="font-mont font-medium text-lg text-violet-800">عرض المزيد</h1></div>
             <h1 className="font-mont font-extrabold text-2xl text-violet-800">أحدث الإعلانات</h1></div>
+        
+       
+        
         <Splider/>
-        
-        
-        
         </div>
         
         

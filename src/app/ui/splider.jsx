@@ -33,18 +33,18 @@ let data = [
     "url": "/platform/slug/حفل-اطلاق-تطبيق-سعودي"
   }
 ];
-
+export default function Splider() {
 var settings = {
   dots: true,
   infinite: true,
   speed: 500,
-  slidesToShow: 4,
+  slidesToShow: 5,
   slidesToScroll: 1,
   rtl: true,
   arrows: true,
 };
 
-export default function Splider() {
+
   return (
     <div className="mx-24">
       <Slider {...settings}>
@@ -52,8 +52,8 @@ export default function Splider() {
           return (
             <div key={element.title} className="w-64 h-96 py-10 bg-white shadow-lg hover:shadow-2xl hover:scale-x-110">
               <div className="flex flex-col items-center">
-                <div className="w-32 h-32 rounded-full">
-                  <Image src={element.image} alt={element.title} width={200} height={200} objectFit="cover" />
+                <div className="w-32 h-32 ">
+                  <Image src={element.image} alt={element.title} className="rounded-full" width={200} height={200}  />
                 </div>
                 <h1>{element.title}</h1>
                 <br />

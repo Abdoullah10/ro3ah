@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Player } from '@lordicon/react';
 const icons = {
     superstar: {
-        src: require('./wired-outline-2239-star-of-bethlehem.json'),
+        src: require('./ui/wired-outline-2239-star-of-bethlehem.json'),
         size: 120,
         states: {
             reveal: 'in-reveal', // verify state name in the official documentation
@@ -12,7 +12,7 @@ const icons = {
         },
     },
     puzzle: {
-        src: require('./wired-outline-186-puzzle.json'),
+        src: require('./ui/wired-outline-186-puzzle.json'),
         size: 120,
         states: {
             reveal: 'in-reveal', // verify state name in the official documentation
@@ -21,7 +21,7 @@ const icons = {
         },
     },
     stars:{
-      src: require('./wired-outline-1865-shooting-stars.json'),
+      src: require('./ui/wired-outline-1865-shooting-stars.json'),
       size: 120,
       states: {
           reveal: 'in-reveal', // verify state name in the official documentation
