@@ -1,10 +1,13 @@
+"use client"
 import Logo from "../ui/logo";
 import Br from "@/ui/brain";
 import Lord from "@/ui/animation";
-import Img from "@/ui/image";
+
 import Icon from "@/ui/icon";
+import Splider from "@/ui/splider";
 
 export default function Home() {
+ 
   return (
     <div>
       <div className="fixed top-0 z-50 w-full h-20  px-10  bg-white shadow-md bg-opacity-95  flex justify-evenly items-center space-x-5 " >
@@ -34,7 +37,7 @@ export default function Home() {
           <div className="flex space-x-2 font-bold justify-end   ">
 
             <button className="bg-teal-600 py-3 px-3 rounded-lg text-lg text-center text-white hover:bg-teal-500 ">ابحث</button>
-            <input className="text-right font-mont text-black w-3/4 mr-0 rounded-lg " type="text" placeholder="بحث عن فرص رعاية " />
+            <input className=" text-right font-mont text-black w-3/4 mr-0  rounded-lg " type="text" placeholder="بحث عن فرص رعاية " />
 
           </div>
 
@@ -54,14 +57,17 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col  py-10 space-y-16">
-        <div className="flex justify-between px-24 "><div className="flex items-center space-x-3"><Icon/><h1 className="font-mont font-medium text-lg text-violet-800">عرض المزيد</h1></div><h1 className="font-mont font-extrabold text-2xl text-violet-800">أحدث الإعلانات</h1></div>
-
+        <div className="flex justify-between px-24 ">
+          <div className="flex items-center space-x-3">
+            <Icon/><h1 className="font-mont font-medium text-lg text-violet-800">عرض المزيد</h1></div>
+            <h1 className="font-mont font-extrabold text-2xl text-violet-800">أحدث الإعلانات</h1></div>
+        <Splider/>
         
-        <div></div>
+        
+        
         </div>
-
-
-
+        
+        
     </div>
   );
 }
