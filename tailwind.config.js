@@ -19,7 +19,9 @@ module.exports = {
           'kufi':["Noto Kufi Arabic"],
           "mont":["Montserrat-Arabic-Regular"]
       },
-      
+      fontWeight:{
+        extramax:'1000'
+      }
       
     },
     

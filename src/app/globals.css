@@ -11,6 +11,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.slick-slide > div { margin:  10px}
+.slick-slide > div {
+  margin: 10px; 
+}
 .slick-prev:before,
 .slick-next:before {color: black  !important;}
+

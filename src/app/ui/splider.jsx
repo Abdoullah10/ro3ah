@@ -38,7 +38,7 @@ var settings = {
   dots: true,
   infinite: true,
   speed: 500,
-  slidesToShow: 5,
+  slidesToShow: 4,
   slidesToScroll: 1,
   rtl: true,
   arrows: true,
@@ -50,14 +50,14 @@ var settings = {
       <Slider {...settings}>
         {data.map((element) => {
           return (
-            <div key={element.title} className="w-64 h-96 py-10 bg-white shadow-lg hover:shadow-2xl hover:scale-x-110">
-              <div className="flex flex-col items-center">
-                <div className="w-32 h-32 ">
-                  <Image src={element.image} alt={element.title} className="rounded-full" width={200} height={200}  />
+            <div key={element.title} className="w-72 h-96 py-10 bg-white shadow-lg hover:shadow-2xl hover:scale-x-110 ">
+              <div className="flex flex-col items-center text-center space-y-3">
+                <div >
+                  <Image src={element.image} alt={element.title} className="rounded-full" width={180} height={180}  />
                 </div>
-                <h1>{element.title}</h1>
+                <h1 className="text-violet-800 font-mont font-medium text-xl">{element.title}</h1>
                 <br />
-                <p>{element.description}</p>
+                <p className="font-mont font-normal text-xs">{element.description}</p>
               </div>
             </div>
           );
